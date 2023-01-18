@@ -11,6 +11,12 @@ export class AppComponent {
   //title = 'basics';
   name = 'Luis'
   imageURL ="https://i.picsum.photos/id/70/3011/2000.jpg?hmac=-npCfe1kpGYW7HcBlZvrEZ9Qb_EdiGLbDxE26amgotM"
+  
+  images =[
+'https://picsum.photos/200/300',
+'https://picsum.photos/200',
+'https://picsum.photos/id/237/200/300'
+  ]
   currentDate = new Date()
   price = 300
   tempreature = 30

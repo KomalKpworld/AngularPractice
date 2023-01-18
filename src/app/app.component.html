@@ -5,8 +5,8 @@
 [ngStyle] ="{'font-size': fontSize}">Change</button>
 <hr>
 <input (keyup) = "changeImage($event)" [value] = "imageURL">
- <app-post [img]="imageURL" (imgSelected)="logImg($event)">
-<p> Some Thing that check</p>
+ <app-post *ngFor = "let image of images; let i = index" [img]="image" (imgSelected)="logImg($event)">
+<p>{{i}} Some Thing that check</p>
  </app-post>
 
 
